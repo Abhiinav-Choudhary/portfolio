@@ -1,0 +1,72 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 6%;
+    font-family: 'Segoe UI', sans-serif;
+    flex-wrap: wrap;
+  }
+  
+  .intro {
+    max-width: 50%;
+    /* font-size: xx-large; */
+    /* font-size:50% ; */
+    margin-left: 20%;
+
+  }
+  .text{
+    font-size: 900px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #666363;
+    line-height: 1.4;
+  }
+  
+  .title {
+    color: steelblue;
+    font-weight: 600;
+  }
+  
+  .work {
+    font-size: 1.5rem;
+    color: #555;
+  }
+  
+  .btn {
+    margin-top: 2rem;
+    padding: 0.75rem 2rem;
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: darkviolet;
+  }
+  
+  .profile-pic-wrapper {
+    width: 330px;
+    height: 330px;
+    border-radius: 50% 35% 50% 35% / 40% 60% 35% 65%;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease;
+  }
+  
+  .profile-pic-wrapper:hover {
+    transform: scale(1.05);
+  }
+  
+  .profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
