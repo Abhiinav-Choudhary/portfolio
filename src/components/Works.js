@@ -8,17 +8,17 @@ const projects = [
   {
     title: "Smart Attendance System",
     description: "A full-stack app with face recognition to mark attendance, built using React, Node.js, and MongoDB.",
-    link: "https://github.com/yourusername/attendance-app"
+    link: "https://github.com/Abhiinav-Choudhary/attendence.git"
   },
   {
     title: "Portfolio Website",
     description: "A responsive portfolio showcasing skills, projects, and contact info, built with React and styled with custom CSS.",
-    link: "https://your-portfolio-link.com"
+    link: "https://github.com/Abhiinav-Choudhary/portfolio.git"
   },
   {
-    title: "Meme Channel Bot",
-    description: "A fun bot that scrapes viral memes and posts them on Instagram using Python automation.",
-    link: "https://github.com/yourusername/meme-bot"
+    title: "ChatBot",
+    description: "A fun bot that can tell all the detailed information about a specific shop or company data using Gemeni api automation.",
+    link: "https://github.com/Abhiinav-Choudhary/chatbot.git"
   }
 ]
 

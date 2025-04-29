@@ -28,7 +28,7 @@ function About() {
             When I'm not coding, you'll find me hitting the gym or hunting for the latest meme-worthy trends on social media!
           </p>
 
-          <a href="/resume.pdf" download="YourName_Resume.pdf" className="resume-btn">Download My Resume</a>
+          <a href="/Abhinav.pdf" download="Abhinav_Resume.pdf" className="resume-btn">Download My Resume</a>
 
           <h3>Tech Stack</h3>
           <div className="tech-stack">
