@@ -10,6 +10,8 @@ function Home() {
     navigate('/contact');
   };
 
+  
+
   return (
     <>
       <Header />
@@ -18,7 +20,7 @@ function Home() {
           <div className="text">
             <h1>
               Hi, <br />
-              I'm <span className="title">Abhinav</span><br />
+              I'm <span className="title" >Abhinav</span><br />
               <span className="work">Web Developer</span>
             </h1>
           </div>

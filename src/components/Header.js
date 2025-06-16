@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink,useNavigate } from 'react-router-dom';
 import '../styles/Header.css';
 import '@fortawesome/fontawesome-free/css/all.min.css'; // Font Awesome
 
@@ -9,9 +9,15 @@ function Header() {
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 
+  const navigate = useNavigate();
+
+   const GoToHome = () => {
+    navigate('/');
+  };
+
   return (
     <div className='Navbar'>
-      <h2 className='name'>Abhinav</h2>
+      <h2 className='name' onClick={GoToHome}>Abhinav</h2>
 
       {/* Hamburger Icon */}
       <div className="hamburger-icon" onClick={toggleMenu}>
