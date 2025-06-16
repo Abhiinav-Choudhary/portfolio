@@ -1,59 +1,90 @@
 .Navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    padding: 0.2rem 1rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  }
-  
-  .name {
-    width: 20%;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #000;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 0.2rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Default Nav for desktop */
+.Nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.Nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.Nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+
+.Nav a:hover::after,
+.Nav a.active::after {
+  width: 100%;
+}
+
+/* Hamburger Icon */
+.hamburger-icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #000;
+}
+
+/* ========== Responsive CSS ========== */
+@media (max-width: 768px) {
   .Nav {
-    width: 80%;
-    display: flex;
-    justify-content: flex-end;
-    gap: 2rem;
-  }
-  
-  .Nav a {
-    text-decoration: none;
-    color: #000;
-    font-size: 1rem;
-    font-weight: bold;
-    position: relative;
-    padding: 0.5rem 0;
-    transition: color 0.3s ease;
-  }
-  
-  .Nav a::after {
-    content: "";
     position: absolute;
-    width: 0%;
-    height: 2px;
-    bottom: 0;
+    top: 100%;
     left: 0;
-    background-color: #007bff;
-    transition: width 0.3s ease;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
-  
-  .Nav a:hover::after {
-    width: 100%;
+
+  .Nav.active {
+    display: flex;
   }
-  
-  .Nav a.active::after {
-    width: 100%;
-    background-color: #007bff;
+
+  .hamburger-icon {
+    display: block;
   }
-  
+
+  .name {
+    font-size: 1.2rem;
+  }
+}

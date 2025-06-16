@@ -1,9 +1,10 @@
 const express = require('express')
 const app = express()
-const ConnectDB = require('./connection')
+const ConnectDB = require('./connection.js')
 const ReqRoute = require('./routes/user.route')
 const cors = require('cors')
 const PORT = 5000
+ConnectDB();
 
 if (ConnectDB()) {
     console.log("database is connected");
