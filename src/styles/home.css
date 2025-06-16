@@ -15,6 +15,7 @@
 
 .text {
   font-size: 1rem;
+  margin-left: 200px;
 }
 
 h1 {
@@ -35,7 +36,8 @@ h1 {
 }
 
 .btn {
-  margin-top: 2rem;
+  margin-top: 0.5rem;
+  margin-left: 200px;
   padding: 0.75rem 2rem;
   color: white;
   background-color: blueviolet;
